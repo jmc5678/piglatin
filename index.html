@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Traductor de Pig Latin</title>
+  <link rel="stylesheet" href="style.css"</link>
+  <script> 
+    function translateToPigLatin() {
+      var input = document.getElementById('inputText').value;
+      var output = document.getElementById('outputText');
+      var words = input.split(' ');
+
+      var translatedWords = words.map(function(word) {
+        var firstLetter = word.charAt(0);
+        var pigLatinWord = word.substring(1) + firstLetter + 'ay';
+        return pigLatinWord;
+      });
+
+      output.innerHTML = translatedWords.join(' ');
+    }
+  </script>
+</head>
+<body>  
+
+<h1> COMO SE JUEGA PIG LATIN </h1>
+
+<h2><center> En Pig Latin, se toma la primera consonante de la palabra inglesa y se la coloca al final y luego se agrega -ay. Por ejemplo, "What a beautiful day!" se traduce por "Atwhay ayay eautifulbay ayda!". Para las palabras que comienzan con vocal o una letra muda, simplemente se agrega -way al final de la palabra </center></h2>
+ 
+  
+  <div align="center"><img src="giphy.gif"></div>  
+  
+   
+ 
+  
+  <h1><center></center>Traductor de Pig Latin</center</h1> 
+
+
+  
+  
+  <label for="inputText">Ingresa un texto:</label>
+  <input type="text" id="inputText"> 
+  <button onclick="translateToPigLatin()">Traducir</button>
+  <br> 
+  <label for="outputText">Texto traducido:</label> 
+  <p id="outputText"></p>
+</body>
+</html>

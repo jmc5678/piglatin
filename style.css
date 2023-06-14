@@ -1,0 +1,63 @@
+body {
+      background-color: #000000;
+      color: #FFFFFF;
+      font-family: Arial, sans-serif;  
+    } 
+ 
+    
+
+    h1 {
+      color: #FF0000;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin: 2% 30% 2% 30%
+    }
+
+    .container {
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .battlefield {
+      background-color: #555555;
+      border: 2px solid #999999;
+      padding: 10px;
+    }
+
+    .soldier {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: #999999;
+      margin: 5px;
+    }
+
+    .tank {
+      display: inline-block;
+      width: 200px;
+      height: 100px;
+      background-color: #777777;
+      margin: 5px;
+    }
+
+    .aircraft {
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      background-color: #AAAAAA;
+      margin: 5px;
+  </style>
+</head>
+<body> 
+  <div class="container">
+    <h1>Estilo de guerra</h1>
+    <div class="battlefield">
+      <div class="soldier"></div>
+      <div class="tank"></div>
+      <div class="aircraft"></div>
+    </div>
+  </div>
+</body>
